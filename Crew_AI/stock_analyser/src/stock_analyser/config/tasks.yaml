@@ -1,0 +1,48 @@
+research_task:
+  description: >
+    Conduct a thorough research about {company} focus on
+      1. Current company performance (stock price, market cap, etc.)
+      2. Historical performance and trends
+      3. Recent news and developments
+      4. Market trends and how they affect the company
+      5. Any other relevant information that can provide insights about the company.
+      6. Future outlook and predictions based on the data and trends.
+
+    make sure to gather information from reliable sources and present it in a clear and concise manner, highlighting the most important insights and findings.
+
+  expected_output: >
+    A detailed report containing all the relevant information about {company} based on the research conducted.
+    The report should be well-structured, with each of the above points covered in detail.
+    The information should be presented in a clear and concise manner, making it easy to understand and draw insights from.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Analyze the research findings about {company} and create a comprehensive report that highlights the key insights, trends, and actionable recommendations based on the data.
+
+    your report should include:
+      1. An executive summary of the key findings and insights about {company}.
+      2. A detailed analysis of the company's current performance, historical trends, and recent developments.
+      3. An assessment of how market trends are affecting the company and its future outlook.
+      4. Clear and actionable recommendations based on the analysis, which could include investment advice, strategic recommendations for the company, or other relevant insights.
+      5. A conclusion that summarizes the overall findings and insights about {company}.
+      6. A final investment recommendation (Yes/No) based on the overall analysis and insights gathered from the research.
+      
+  expected_output: >
+    A polished and professional report that synthesizes the research findings about {company}
+    into clear insights and actionable recommendations. The report should be well-structured, with a logical flow of information, and should be easy to understand for stakeholders who may not have a deep financial background.
+  agent: reporting_analyst
+  context:
+    - research_task
+  output_file: output/report_{company}.txt
+  output_format: >
+    The report should be structured as follows:
+      1. Executive Summary
+      2. Company Performance Analysis
+      3. Market Trends and Impact
+      4. Future Outlook
+      5. Recommendations
+      6. Conclusion
+      7. References (if applicable)
+      8. Investment Recommendation (Yes/No)
+    

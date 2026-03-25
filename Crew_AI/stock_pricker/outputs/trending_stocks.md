@@ -1,0 +1,1 @@
+{"companies":[{"name":"Sandisk","stock_price":694.64,"growth_percentage":170.0},{"name":"NVIDIA","stock_price":175.64,"growth_percentage":43.68},{"name":"Palantir","stock_price":160.84,"growth_percentage":26.36}]}

@@ -1,0 +1,32 @@
+find_trending_companies:
+  description: >
+    Quickly scan recent news and financial reports for the {sector} sector. Identify only the top 3 stocks with the highest recent growth (last 6 months) and strong future outlook. Limit searches to 2-3 targeted queries per stock to avoid excessive API usage.
+  expected_output: >
+    A concise list of 3 stocks in the {sector} sector, with brief summaries of their recent performance and growth potential.
+  output_file: outputs/trending_stocks.md
+  agent: trending_company_finder
+
+research_trending_companies:
+  description: >
+    Using the provided list of trending companies, perform targeted financial analysis. Focus on 2-3 key metrics per company (e.g., revenue growth, profit margins). Use cached or summarized data where possible to minimize new searches.
+  expected_output: >
+    A focused financial analysis for each trending company, highlighting key metrics and growth potential without exhaustive searches.
+  output_file: outputs/financial_analysis.md
+  agent: financial_researcher_agent
+  context:
+    - find_trending_companies
+
+pick_stocks:
+  description: >
+    Based on the financial analysis of the trending companies in the {sector} sector, select the top 1 stocks that show the most promise for growth and profitability.
+    Provide a detailed rationale for selected stock, highlighting the key factors that make them attractive investment opportunities.
+  expected_output: >
+    A detailed rationale for the selected stock, including key factors that make it an attractive investment opportunity based on the financial analysis.
+  output_file: outputs/stock_selection.md
+  agent: stock_picker_agent
+  context:
+    - research_trending_companies
+
+ 
+
+
