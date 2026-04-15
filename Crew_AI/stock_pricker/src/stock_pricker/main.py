@@ -18,7 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        "sector": "technology",
+        "sector": "Financial sector in India",
     }
     # crew = StockAnalyser()
     # result = crew.run(inputs=inputs)

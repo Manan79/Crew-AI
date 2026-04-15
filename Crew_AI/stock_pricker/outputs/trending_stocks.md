@@ -1,1 +1,1 @@
-{"companies":[{"name":"Sandisk","stock_price":694.64,"growth_percentage":170.0},{"name":"NVIDIA","stock_price":175.64,"growth_percentage":43.68},{"name":"Palantir","stock_price":160.84,"growth_percentage":26.36}]}
+{"companies":[{"name":"Karnataka Bank Ltd","stock_price":226.5,"growth_percentage":8.36},{"name":"Union Bank of India","stock_price":180.3,"growth_percentage":6.5},{"name":"Bajaj Finance","stock_price":843.8,"growth_percentage":28.83}]}
