@@ -34,7 +34,7 @@ reporting_task:
   agent: reporting_analyst
   context:
     - research_task
-  output_file: output/report_{company}.txt
+  output_file: output/report_{company}.md
   output_format: >
     The report should be structured as follows:
       1. Executive Summary
