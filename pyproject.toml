@@ -12,6 +12,8 @@ dependencies = [
     "langchain-groq>=1.1.2",
     "langchain-openai>=1.1.13",
     "langgraph>=1.1.6",
+    "markdown>=3.10.2",
     "pydantic>=2.12.5",
     "python-dotenv>=1.2.2",
+    "typing>=3.10.0.0",
 ]
